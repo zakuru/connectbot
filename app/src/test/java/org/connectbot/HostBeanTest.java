@@ -102,7 +102,7 @@ public class HostBeanTest {
 	@Test
 	public void equals_NicknameDifferent_Failure() {
 		host1.setNickname("Work");
-		assertEquals(host1, host2);
+		assertNotEquals(host1, host2);
 	}
 
 	@Test
